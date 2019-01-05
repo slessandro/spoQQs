@@ -1,0 +1,5 @@
+Copying this folder and all of its contents into your home dir should be enough to run the program.
+.csv files are components db.
+.spq files are examples that can be load or saved from Results Dialog.
+
+Based on Qt 5.12.0 (MinGW 7.3.0 64bit)

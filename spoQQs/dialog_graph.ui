@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_Graph</class>
+ <widget class="QDialog" name="Dialog_Graph">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Wheel Graph</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" stretch="4,0,1">
+   <item>
+    <widget class="QGraphicsView_nowheel" name="graphicsViewAxial">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="renderHints">
+      <set>QPainter::Antialiasing|QPainter::TextAntialiasing</set>
+     </property>
+     <property name="dragMode">
+      <enum>QGraphicsView::ScrollHandDrag</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGraphicsView" name="graphicsViewRadial">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="renderHints">
+      <set>QPainter::Antialiasing|QPainter::TextAntialiasing</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QGraphicsView_nowheel</class>
+   <extends>QGraphicsView</extends>
+   <header>qgraphicsview_nowheel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
